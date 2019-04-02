@@ -1,0 +1,10 @@
+Expected PCB stack-up for 4 layer boards:
+
+4 layer stackup: 
+1oz copper
+0.2mm or 0.18mm FR4
+0.5oz copper
+1.2mm or 1.12mm FR4
+0.5oz copper
+0.2mm or 0.18mm FR4
+1oz copper

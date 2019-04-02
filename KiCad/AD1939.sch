@@ -1,0 +1,1416 @@
+EESchema Schematic File Version 4
+LIBS:uCODEC-1.0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title "uCODEC"
+Date "2019-04-02"
+Rev "1.0"
+Comp "Open Hardware DSP Platform - www.ohdsp.org"
+Comment1 "MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE."
+Comment2 "is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF"
+Comment3 "Licensed under the TAPR Open Hardware License (www.tapr.org/OHL). This documentation"
+Comment4 "Copyright Paul Janicki 2019"
+$EndDescr
+Text HLabel 4700 4750 2    60   Input ~ 0
+ADCIN_LRCLK0
+Text HLabel 4700 4650 2    60   Input ~ 0
+ADCIN_BCLK0
+Text HLabel 4700 4550 2    60   Output ~ 0
+ADCIN_SDATA0
+Text Label 5700 1250 2    60   ~ 0
+AVDD
+$Comp
+L power:GNDD #PWR0202
+U 1 1 54DB2FEF
+P 2000 2400
+F 0 "#PWR0202" H 2000 2150 60  0001 C CNN
+F 1 "GNDD" H 2000 2250 60  0000 C CNN
+F 2 "" H 2000 2400 60  0000 C CNN
+F 3 "" H 2000 2400 60  0000 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4700 4450 2    60   BiDi ~ 0
+ADCIN_SDATA1
+$Comp
+L power:GNDD #PWR0211
+U 1 1 54E2D7D3
+P 7850 5700
+F 0 "#PWR0211" H 7850 5450 60  0001 C CNN
+F 1 "GNDD" H 7850 5550 60  0000 C CNN
+F 2 "" H 7850 5700 60  0000 C CNN
+F 3 "" H 7850 5700 60  0000 C CNN
+	1    7850 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0213
+U 1 1 54E2D862
+P 8650 5700
+F 0 "#PWR0213" H 8650 5450 60  0001 C CNN
+F 1 "GNDD" H 8650 5550 60  0000 C CNN
+F 2 "" H 8650 5700 60  0000 C CNN
+F 3 "" H 8650 5700 60  0000 C CNN
+	1    8650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0216
+U 1 1 54E3B3FE
+P 10200 5050
+F 0 "#PWR0216" H 10200 4800 60  0001 C CNN
+F 1 "GNDD" H 10200 4900 60  0000 C CNN
+F 2 "" H 10200 5050 60  0000 C CNN
+F 3 "" H 10200 5050 60  0000 C CNN
+	1    10200 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1600 5850 0    60   Input ~ 0
+DACOUT_LRCLK0
+Text HLabel 1600 5750 0    60   Input ~ 0
+DACOUT_BCLK0
+Text HLabel 1600 5650 0    60   Input ~ 0
+DACOUT_SDATA0
+Text HLabel 1600 5550 0    60   BiDi ~ 0
+DACOUT_SDATA1
+Text HLabel 1600 5450 0    60   Input ~ 0
+DACOUT_SDATA2
+Text HLabel 1600 5350 0    60   BiDi ~ 0
+DACOUT_SDATA3
+Text Notes 7300 3150 0    118  ~ 0
+Master Clock
+Text Notes 7350 4500 0    59   ~ 0
+Standard Crystal
+Text Label 7350 4650 0    60   ~ 0
+XTALOUT
+Text Label 7350 4800 0    60   ~ 0
+XTALIN
+Text HLabel 9600 4150 2    60   Input ~ 0
+MCLK
+Text Notes 8900 4650 0    59   ~ 0
+External Clock
+$Comp
+L power:GNDD #PWR0214
+U 1 1 54EF27F5
+P 9750 5600
+F 0 "#PWR0214" H 9750 5350 60  0001 C CNN
+F 1 "GNDD" H 9750 5450 60  0000 C CNN
+F 2 "" H 9750 5600 60  0000 C CNN
+F 3 "" H 9750 5600 60  0000 C CNN
+	1    9750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4800 9750 4950
+Wire Wire Line
+	9750 5450 9750 5600
+Wire Wire Line
+	4250 4650 4700 4650
+Wire Wire Line
+	4700 4750 4250 4750
+Wire Wire Line
+	4250 4550 4700 4550
+Wire Wire Line
+	4700 4450 4250 4450
+Wire Wire Line
+	1700 5350 1600 5350
+Wire Wire Line
+	1700 5450 1600 5450
+Wire Wire Line
+	1700 5550 1600 5550
+Wire Wire Line
+	1700 5850 1600 5850
+Wire Wire Line
+	1600 5750 1700 5750
+Wire Wire Line
+	1700 5650 1600 5650
+Wire Wire Line
+	9500 4800 9750 4800
+Wire Wire Line
+	10200 4700 10200 4900
+Connection ~ 8650 5050
+Wire Wire Line
+	8550 5050 8650 5050
+Connection ~ 7850 4800
+Connection ~ 7850 5050
+Wire Wire Line
+	7950 5050 7850 5050
+Wire Wire Line
+	7850 5700 7850 5650
+Wire Wire Line
+	8650 5700 8650 5650
+Wire Wire Line
+	7350 4650 7900 4650
+Wire Wire Line
+	7350 4800 7850 4800
+Wire Wire Line
+	7850 4800 7850 5050
+Wire Wire Line
+	8650 4650 8400 4650
+Wire Wire Line
+	8650 4650 8650 5050
+Wire Wire Line
+	5900 6400 6050 6400
+Wire Wire Line
+	5900 6150 5900 6400
+Wire Wire Line
+	6550 6150 6450 6150
+Wire Wire Line
+	1250 1250 1350 1250
+Connection ~ 2000 2350
+Wire Wire Line
+	2000 2050 2000 2350
+Connection ~ 2000 1250
+Wire Wire Line
+	1950 1250 2000 1250
+Connection ~ 3900 2350
+Connection ~ 3900 1250
+Connection ~ 5450 1250
+Wire Wire Line
+	5700 1250 5700 1650
+Wire Wire Line
+	5450 1250 5450 1650
+Connection ~ 5450 2350
+Wire Wire Line
+	5700 2350 5700 2050
+Wire Wire Line
+	5450 2350 5450 2050
+Connection ~ 5100 2350
+Connection ~ 5100 1250
+Connection ~ 4850 1250
+Wire Wire Line
+	5100 1250 5100 1650
+Wire Wire Line
+	4850 1250 4850 1650
+Connection ~ 4850 2350
+Wire Wire Line
+	5100 2350 5100 2050
+Wire Wire Line
+	4850 2350 4850 2050
+Connection ~ 4500 2350
+Connection ~ 4500 1250
+Connection ~ 4250 1250
+Wire Wire Line
+	4500 1250 4500 1650
+Wire Wire Line
+	4250 1250 4250 1650
+Connection ~ 4250 2350
+Wire Wire Line
+	4500 2350 4500 2050
+Wire Wire Line
+	4250 2350 4250 2050
+Connection ~ 3650 1250
+Wire Wire Line
+	3900 1250 3900 1650
+Wire Wire Line
+	3650 1250 3650 1650
+Connection ~ 3650 2350
+Wire Wire Line
+	3900 2350 3900 2050
+Wire Wire Line
+	3650 2350 3650 2050
+Wire Wire Line
+	3300 2350 3300 2050
+Wire Wire Line
+	3300 1250 3300 1650
+Connection ~ 3300 1250
+Connection ~ 3300 2350
+Wire Wire Line
+	1250 1100 1250 1250
+Wire Wire Line
+	10200 4900 10300 4900
+Wire Wire Line
+	10300 4700 10200 4700
+Connection ~ 10200 4900
+Text HLabel 4700 5100 2    60   Input ~ 0
+SPI_M_CLK
+Text HLabel 4700 5000 2    60   Output ~ 0
+SPI_M_MISO
+Text HLabel 4700 4900 2    60   Input ~ 0
+SPI_M_MOSI
+Text HLabel 4700 5200 2    60   Input ~ 0
+SPI_M_CS
+$Comp
+L MyKiCadLibs-Lib:C C205
+U 1 1 570FB6DA
+P 3650 1850
+F 0 "C205" H 3650 1950 40  0000 L CNN
+F 1 "100n" H 3660 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 3688 1700 30  0001 C CNN
+F 3 "" H 3650 1950 60  0000 C CNN
+F 4 "50V" H 3665 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 3665 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 3650 2150 40  0001 L CNN "Description"
+F 7 "10%" H 3720 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 3660 1555 40  0000 L CNN "Size"
+	1    3650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C206
+U 1 1 570FB8A3
+P 3900 1850
+F 0 "C206" H 3900 1950 40  0000 L CNN
+F 1 "10n" H 3910 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 3938 1700 30  0001 C CNN
+F 3 "" H 3900 1950 60  0000 C CNN
+F 4 "50V" H 3915 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 3915 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 3900 2150 40  0001 L CNN "Description"
+F 7 "10%" H 3970 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 3910 1555 40  0000 L CNN "Size"
+	1    3900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C207
+U 1 1 570FD2B4
+P 4250 1850
+F 0 "C207" H 4250 1950 40  0000 L CNN
+F 1 "100n" H 4260 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 4288 1700 30  0001 C CNN
+F 3 "" H 4250 1950 60  0000 C CNN
+F 4 "50V" H 4265 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 4265 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 4250 2150 40  0001 L CNN "Description"
+F 7 "10%" H 4320 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 4260 1555 40  0000 L CNN "Size"
+	1    4250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C209
+U 1 1 570FD2BF
+P 4500 1850
+F 0 "C209" H 4500 1950 40  0000 L CNN
+F 1 "10n" H 4510 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 4538 1700 30  0001 C CNN
+F 3 "" H 4500 1950 60  0000 C CNN
+F 4 "50V" H 4515 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 4515 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 4500 2150 40  0001 L CNN "Description"
+F 7 "10%" H 4570 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 4510 1555 40  0000 L CNN "Size"
+	1    4500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C211
+U 1 1 5710298A
+P 4850 1850
+F 0 "C211" H 4850 1950 40  0000 L CNN
+F 1 "100n" H 4860 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 4888 1700 30  0001 C CNN
+F 3 "" H 4850 1950 60  0000 C CNN
+F 4 "50V" H 4865 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 4865 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 4850 2150 40  0001 L CNN "Description"
+F 7 "10%" H 4920 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 4860 1555 40  0000 L CNN "Size"
+	1    4850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C212
+U 1 1 57102995
+P 5100 1850
+F 0 "C212" H 5100 1950 40  0000 L CNN
+F 1 "10n" H 5110 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 5138 1700 30  0001 C CNN
+F 3 "" H 5100 1950 60  0000 C CNN
+F 4 "50V" H 5115 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 5115 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 5100 2150 40  0001 L CNN "Description"
+F 7 "10%" H 5170 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 5110 1555 40  0000 L CNN "Size"
+	1    5100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C214
+U 1 1 57103006
+P 5450 1850
+F 0 "C214" H 5450 1950 40  0000 L CNN
+F 1 "100n" H 5460 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 5488 1700 30  0001 C CNN
+F 3 "" H 5450 1950 60  0000 C CNN
+F 4 "50V" H 5465 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 5465 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 5450 2150 40  0001 L CNN "Description"
+F 7 "10%" H 5520 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 5460 1555 40  0000 L CNN "Size"
+	1    5450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C216
+U 1 1 57103011
+P 5700 1850
+F 0 "C216" H 5700 1950 40  0000 L CNN
+F 1 "10n" H 5710 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 5738 1700 30  0001 C CNN
+F 3 "" H 5700 1950 60  0000 C CNN
+F 4 "50V" H 5715 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 5715 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 5700 2150 40  0001 L CNN "Description"
+F 7 "10%" H 5770 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 5710 1555 40  0000 L CNN "Size"
+	1    5700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C218
+U 1 1 571324E3
+P 6250 6150
+F 0 "C218" H 6250 6250 40  0000 L CNN
+F 1 "39n" H 6260 6065 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 6288 6000 30  0001 C CNN
+F 3 "" H 6250 6250 60  0000 C CNN
+F 4 "50V" H 6265 5995 40  0000 L CNN "Voltage"
+F 5 "X7R" H 6265 5925 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 6250 6450 40  0001 L CNN "Description"
+F 7 "10%" H 6320 5785 40  0001 C CNN "Tolerance"
+F 8 "0603" H 6260 5855 40  0000 L CNN "Size"
+	1    6250 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C219
+U 1 1 571333EF
+P 6250 6400
+F 0 "C219" H 6250 6500 40  0000 L CNN
+F 1 "2n2" H 6260 6315 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 6288 6250 30  0001 C CNN
+F 3 "" H 6250 6500 60  0000 C CNN
+F 4 "50V" H 6265 6245 40  0000 L CNN "Voltage"
+F 5 "C0G" H 6265 6175 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 6250 6700 40  0001 L CNN "Description"
+F 7 "5%" H 6320 6035 40  0001 C CNN "Tolerance"
+F 8 "0603" H 6260 6105 40  0000 L CNN "Size"
+	1    6250 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R202
+U 1 1 570FC532
+P 6800 6150
+F 0 "R202" V 6700 6150 40  0000 C CNN
+F 1 "3K32" V 6807 6151 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" V 6730 6150 30  0001 C CNN
+F 3 "" V 6720 6150 30  0000 C CNN
+F 4 "63mW" V 6900 6150 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 7045 6150 40  0001 C CNN "Description"
+F 6 "0603" V 6900 6150 40  0000 C CNN "Size"
+F 7 "1%" V 7125 6150 40  0001 C CNN "Tolerance"
+	1    6800 6150
+	0    -1   1    0   
+$EndComp
+Text Notes 750  750  0    118  ~ 0
+AD1939
+Text HLabel 6500 5400 2    60   Input ~ 0
+RESET
+Wire Wire Line
+	8650 5050 8650 5250
+Wire Wire Line
+	7850 5050 7850 5250
+Wire Wire Line
+	5900 6150 6050 6150
+Wire Wire Line
+	2000 2350 2000 2400
+Wire Wire Line
+	5450 1250 5700 1250
+Wire Wire Line
+	5450 2350 5700 2350
+Wire Wire Line
+	4850 2350 5100 2350
+Wire Wire Line
+	4250 1250 4500 1250
+Wire Wire Line
+	4250 2350 4500 2350
+Wire Wire Line
+	3650 1250 3900 1250
+Wire Wire Line
+	3650 2350 3900 2350
+Wire Wire Line
+	10200 4900 10200 5000
+$Comp
+L MyKiCadLibs-Lib:CONN_4x1 P201
+U 1 1 5C17EFCF
+P 10300 4900
+F 0 "P201" H 10550 5100 40  0000 L CNN
+F 1 "CONN_4x1" H 10550 5000 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:CONN_SIL_4_1MM" H 10728 4659 60  0001 L CNN
+F 3 "" H 10640 4790 60  0000 C CNN
+F 4 "Text description" H 10550 4500 40  0001 C CNN "Description"
+	1    10300 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0215
+U 1 1 5C1B1E0E
+P 10200 4100
+F 0 "#PWR0215" H 10200 3950 50  0001 C CNN
+F 1 "+3V3" H 10200 4240 50  0000 C CNN
+F 2 "" H 10200 4100 50  0001 C CNN
+F 3 "" H 10200 4100 50  0001 C CNN
+	1    10200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4100 10200 4150
+Wire Wire Line
+	10200 4600 10300 4600
+Wire Wire Line
+	10000 4200 10000 4150
+Wire Wire Line
+	10000 4150 10200 4150
+Connection ~ 10200 4150
+Wire Wire Line
+	10200 4150 10200 4600
+Wire Wire Line
+	10000 4600 10000 5000
+Wire Wire Line
+	10000 5000 10200 5000
+Connection ~ 10200 5000
+Wire Wire Line
+	10200 5000 10200 5050
+Wire Wire Line
+	9500 4150 9600 4150
+Wire Wire Line
+	5100 2350 5450 2350
+Wire Wire Line
+	4500 1250 4850 1250
+Wire Wire Line
+	4500 2350 4850 2350
+Wire Wire Line
+	3900 1250 4250 1250
+Wire Wire Line
+	3900 2350 4250 2350
+Wire Wire Line
+	3300 2350 3650 2350
+Wire Wire Line
+	3300 1250 3650 1250
+$Comp
+L MyKiCadLibs-Lib:C C222
+U 1 1 5C625097
+P 7850 5450
+F 0 "C222" H 7850 5550 40  0000 L CNN
+F 1 "N/F" H 7860 5365 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 7888 5300 30  0001 C CNN
+F 3 "" H 7850 5550 60  0000 C CNN
+F 4 "25V" H 7865 5295 40  0001 L CNN "Voltage"
+F 5 "C0G" H 7865 5225 40  0001 L CNN "Type"
+F 6 "Ceramic capacitor" H 7850 5750 40  0001 L CNN "Description"
+F 7 "5%" H 7920 5085 40  0001 C CNN "Tolerance"
+F 8 "0603" H 7860 5155 40  0001 L CNN "Size"
+	1    7850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C226
+U 1 1 5C625AEB
+P 8650 5450
+F 0 "C226" H 8650 5550 40  0000 L CNN
+F 1 "N/F" H 8660 5365 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 8688 5300 30  0001 C CNN
+F 3 "" H 8650 5550 60  0000 C CNN
+F 4 "25V" H 8665 5295 40  0001 L CNN "Voltage"
+F 5 "C0G" H 8665 5225 40  0001 L CNN "Type"
+F 6 "Ceramic capacitor" H 8650 5750 40  0001 L CNN "Description"
+F 7 "5%" H 8720 5085 40  0001 C CNN "Tolerance"
+F 8 "0603" H 8660 5155 40  0001 L CNN "Size"
+	1    8650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R203
+U 1 1 5C625F66
+P 8150 4650
+F 0 "R203" V 8100 4950 40  0000 C CNN
+F 1 "N/F" V 8157 4651 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" V 8080 4650 30  0001 C CNN
+F 3 "" V 8070 4650 30  0000 C CNN
+F 4 "63mW" V 8250 4650 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 8395 4650 40  0001 C CNN "Description"
+F 6 "0603" V 8325 4650 40  0001 C CNN "Size"
+F 7 "1%" V 8475 4650 40  0001 C CNN "Tolerance"
+	1    8150 4650
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C230
+U 1 1 5C76DED0
+P 10000 4400
+F 0 "C230" H 10000 4500 40  0000 L CNN
+F 1 "100n" H 10010 4315 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 10038 4250 30  0001 C CNN
+F 3 "" H 10000 4500 60  0000 C CNN
+F 4 "50V" H 10015 4245 40  0000 L CNN "Voltage"
+F 5 "X7R" H 10015 4175 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 10000 4700 40  0001 L CNN "Description"
+F 7 "10%" H 10070 4035 40  0001 C CNN "Tolerance"
+F 8 "0603" H 10010 4105 40  0000 L CNN "Size"
+	1    10000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R205
+U 1 1 5C76EECC
+P 9250 4800
+F 0 "R205" V 9200 5100 40  0000 C CNN
+F 1 "N/F" V 9257 4801 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" V 9180 4800 30  0001 C CNN
+F 3 "" V 9170 4800 30  0000 C CNN
+F 4 "63mW" V 9350 4800 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 9495 4800 40  0001 C CNN "Description"
+F 6 "0603" V 9425 4800 40  0001 C CNN "Size"
+F 7 "1%" V 9575 4800 40  0001 C CNN "Tolerance"
+	1    9250 4800
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R206
+U 1 1 5C76F572
+P 9750 5200
+F 0 "R206" V 9700 5500 40  0000 C CNN
+F 1 "N/F" V 9757 5201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" V 9680 5200 30  0001 C CNN
+F 3 "" V 9670 5200 30  0000 C CNN
+F 4 "63mW" V 9850 5200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 9995 5200 40  0001 C CNN "Description"
+F 6 "0603" V 9925 5200 40  0001 C CNN "Size"
+F 7 "1%" V 10075 5200 40  0001 C CNN "Tolerance"
+	1    9750 5200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7850 4800 8800 4800
+Connection ~ 9750 4800
+Wire Wire Line
+	9750 4800 10300 4800
+$Comp
+L MyKiCadLibs-Lib:CRYSTAL_4PIN X201
+U 1 1 5C670F75
+P 8250 5050
+F 0 "X201" H 8000 5150 60  0000 C CNN
+F 1 "N/F" H 8050 5250 60  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:XTAL_3.2x2.5_4PIN" H 8400 4750 60  0001 L CNN
+F 3 "" H 8250 5200 60  0000 C CNN
+F 4 "Not Fitted - 3.2x2.5mm crystal" H 8400 4850 40  0001 L CNN "Description"
+	1    8250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0212
+U 1 1 5C6A5A8E
+P 8250 5450
+F 0 "#PWR0212" H 8250 5200 60  0001 C CNN
+F 1 "GNDD" H 8250 5300 60  0000 C CNN
+F 2 "" H 8250 5450 60  0000 C CNN
+F 3 "" H 8250 5450 60  0000 C CNN
+	1    8250 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5450 8250 5350
+Wire Wire Line
+	8250 5350 8350 5350
+Wire Wire Line
+	8350 5350 8350 5200
+Wire Wire Line
+	8150 5200 8150 5350
+Wire Wire Line
+	8150 5350 8250 5350
+Connection ~ 8250 5350
+$Comp
+L MyKiCadLibs-Lib:C C201
+U 1 1 5C7A9A70
+P 2000 1850
+F 0 "C201" H 2000 1950 40  0000 L CNN
+F 1 "100p" H 2010 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 2038 1700 30  0001 C CNN
+F 3 "" H 2000 1950 60  0000 C CNN
+F 4 "50V" H 2015 1695 40  0000 L CNN "Voltage"
+F 5 "NP0" H 2015 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 2000 2150 40  0001 L CNN "Description"
+F 7 "5%" H 2070 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 2010 1555 40  0001 L CNN "Size"
+	1    2000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R204
+U 1 1 5C8A08B5
+P 9250 4150
+F 0 "R204" V 9150 4150 40  0000 C CNN
+F 1 "22" V 9257 4151 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" V 9180 4150 30  0001 C CNN
+F 3 "" V 9170 4150 30  0000 C CNN
+F 4 "63mW" V 9350 4150 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 9495 4150 40  0001 C CNN "Description"
+F 6 "0603" V 9425 4150 40  0001 C CNN "Size"
+F 7 "1%" V 9575 4150 40  0001 C CNN "Tolerance"
+	1    9250 4150
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C204
+U 1 1 5C73AA2D
+P 3300 1850
+F 0 "C204" H 3300 1950 40  0000 L CNN
+F 1 "100n" H 3310 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 3338 1700 30  0001 C CNN
+F 3 "" H 3300 1950 60  0000 C CNN
+F 4 "50V" H 3315 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 3315 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 3300 2150 40  0001 L CNN "Description"
+F 7 "10%" H 3370 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 3310 1555 40  0000 L CNN "Size"
+	1    3300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:IC-CODEC-AD1939 U201
+U 1 1 5C84851D
+P 1700 3600
+F 0 "U201" H 1950 4000 60  0000 C CNN
+F 1 "AD1939" H 2000 3900 60  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:IC-LQFP64" H 1700 1300 60  0001 C CNN
+F 3 "" H 1700 1300 60  0000 C CNN
+F 4 "Analog Devices AD1939WBSTZ - 4 ADC/8 DAC with PLL" H 1700 3600 50  0001 C CNN "Description"
+	1    1700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:INDUCTOR L?
+U 1 1 5C85D9B4
+P 1650 1250
+AR Path="/54DA50D9/5C85D9B4" Ref="L?"  Part="1" 
+AR Path="/54BE4270/5C85D9B4" Ref="L201"  Part="1" 
+F 0 "L201" V 1600 1250 40  0000 C CNN
+F 1 "600R@100MHz" V 1750 1250 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" H 1650 1250 60  0001 C CNN
+F 3 "" H 1650 1250 60  0000 C CNN
+F 4 "=>1A" V 1800 1250 40  0000 C CNN "Current"
+F 5 "Ferrite bead, current rating 1A or higher, 600R@100MHz" V 1850 1300 40  0001 C CNN "Description"
+F 6 "0805" V 1650 1250 60  0001 C CNN "Size"
+	1    1650 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 1250 2000 1650
+$Comp
+L power:GNDD #PWR0205
+U 1 1 5C994D25
+P 3850 3150
+F 0 "#PWR0205" H 3850 2900 60  0001 C CNN
+F 1 "GNDD" H 3850 3000 60  0000 C CNN
+F 2 "" H 3850 3150 60  0000 C CNN
+F 3 "" H 3850 3150 60  0000 C CNN
+	1    3850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3200 3500 3050
+Wire Wire Line
+	3500 3050 3850 3050
+Wire Wire Line
+	3850 3050 3850 3150
+Wire Wire Line
+	3400 3200 3400 3050
+Wire Wire Line
+	3400 3050 3500 3050
+Connection ~ 3500 3050
+Wire Wire Line
+	3300 3200 3300 3050
+Wire Wire Line
+	3300 3050 3400 3050
+Connection ~ 3400 3050
+Wire Wire Line
+	4850 1250 5100 1250
+Wire Wire Line
+	5100 1250 5450 1250
+Text Label 9700 1250 2    60   ~ 0
+DVDD
+$Comp
+L power:GNDD #PWR0210
+U 1 1 5CAB6DCE
+P 6950 2400
+F 0 "#PWR0210" H 6950 2150 60  0001 C CNN
+F 1 "GNDD" H 6950 2250 60  0000 C CNN
+F 2 "" H 6950 2400 60  0000 C CNN
+F 3 "" H 6950 2400 60  0000 C CNN
+	1    6950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1250 6300 1250
+Connection ~ 6950 2350
+Wire Wire Line
+	6950 2050 6950 2350
+Connection ~ 6950 1250
+Wire Wire Line
+	6900 1250 6950 1250
+Connection ~ 8850 2350
+Connection ~ 8850 1250
+Connection ~ 9200 1250
+Wire Wire Line
+	9450 1250 9450 1650
+Wire Wire Line
+	9200 1250 9200 1650
+Connection ~ 9200 2350
+Wire Wire Line
+	9450 2350 9450 2050
+Wire Wire Line
+	9200 2350 9200 2050
+Connection ~ 8600 1250
+Wire Wire Line
+	8850 1250 8850 1650
+Wire Wire Line
+	8600 1250 8600 1650
+Connection ~ 8600 2350
+Wire Wire Line
+	8850 2350 8850 2050
+Wire Wire Line
+	8600 2350 8600 2050
+Wire Wire Line
+	8250 2350 8250 2050
+Wire Wire Line
+	8250 1250 8250 1650
+Connection ~ 8250 1250
+Connection ~ 8250 2350
+Wire Wire Line
+	6200 1100 6200 1250
+$Comp
+L MyKiCadLibs-Lib:C C225
+U 1 1 5CAB6E0C
+P 8600 1850
+F 0 "C225" H 8600 1950 40  0000 L CNN
+F 1 "100n" H 8610 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 8638 1700 30  0001 C CNN
+F 3 "" H 8600 1950 60  0000 C CNN
+F 4 "50V" H 8615 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 8615 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 8600 2150 40  0001 L CNN "Description"
+F 7 "10%" H 8670 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 8610 1555 40  0000 L CNN "Size"
+	1    8600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C227
+U 1 1 5CAB6E17
+P 8850 1850
+F 0 "C227" H 8850 1950 40  0000 L CNN
+F 1 "10n" H 8860 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 8888 1700 30  0001 C CNN
+F 3 "" H 8850 1950 60  0000 C CNN
+F 4 "50V" H 8865 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 8865 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 8850 2150 40  0001 L CNN "Description"
+F 7 "10%" H 8920 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 8860 1555 40  0000 L CNN "Size"
+	1    8850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C228
+U 1 1 5CAB6E22
+P 9200 1850
+F 0 "C228" H 9200 1950 40  0000 L CNN
+F 1 "100n" H 9210 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 9238 1700 30  0001 C CNN
+F 3 "" H 9200 1950 60  0000 C CNN
+F 4 "50V" H 9215 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 9215 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 9200 2150 40  0001 L CNN "Description"
+F 7 "10%" H 9270 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 9210 1555 40  0000 L CNN "Size"
+	1    9200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C229
+U 1 1 5CAB6E2D
+P 9450 1850
+F 0 "C229" H 9450 1950 40  0000 L CNN
+F 1 "10n" H 9460 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 9488 1700 30  0001 C CNN
+F 3 "" H 9450 1950 60  0000 C CNN
+F 4 "50V" H 9465 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 9465 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 9450 2150 40  0001 L CNN "Description"
+F 7 "10%" H 9520 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 9460 1555 40  0000 L CNN "Size"
+	1    9450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0209
+U 1 1 5CAB6E5F
+P 6200 1100
+F 0 "#PWR0209" H 6200 950 50  0001 C CNN
+F 1 "+3V3" H 6200 1240 50  0000 C CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "" H 6200 1100 50  0001 C CNN
+	1    6200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2350 6950 2400
+Wire Wire Line
+	9450 1250 9700 1250
+Wire Wire Line
+	9200 1250 9450 1250
+Wire Wire Line
+	9200 2350 9450 2350
+Wire Wire Line
+	8600 1250 8850 1250
+Wire Wire Line
+	8600 2350 8850 2350
+Wire Wire Line
+	8850 1250 9200 1250
+Wire Wire Line
+	8850 2350 9200 2350
+Wire Wire Line
+	8250 2350 8600 2350
+Wire Wire Line
+	8250 1250 8600 1250
+$Comp
+L MyKiCadLibs-Lib:C C220
+U 1 1 5CAB6E7B
+P 6950 1850
+F 0 "C220" H 6950 1950 40  0000 L CNN
+F 1 "100p" H 6960 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 6988 1700 30  0001 C CNN
+F 3 "" H 6950 1950 60  0000 C CNN
+F 4 "50V" H 6965 1695 40  0000 L CNN "Voltage"
+F 5 "NP0" H 6965 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 6950 2150 40  0001 L CNN "Description"
+F 7 "5%" H 7020 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 6960 1555 40  0001 L CNN "Size"
+	1    6950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C224
+U 1 1 5CAB6E86
+P 8250 1850
+F 0 "C224" H 8250 1950 40  0000 L CNN
+F 1 "100n" H 8260 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 8288 1700 30  0001 C CNN
+F 3 "" H 8250 1950 60  0000 C CNN
+F 4 "50V" H 8265 1695 40  0000 L CNN "Voltage"
+F 5 "X7R" H 8265 1625 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 8250 2150 40  0001 L CNN "Description"
+F 7 "10%" H 8320 1485 40  0001 C CNN "Tolerance"
+F 8 "0603" H 8260 1555 40  0000 L CNN "Size"
+	1    8250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:INDUCTOR L?
+U 1 1 5CAB6E91
+P 6600 1250
+AR Path="/54DA50D9/5CAB6E91" Ref="L?"  Part="1" 
+AR Path="/54BE4270/5CAB6E91" Ref="L202"  Part="1" 
+F 0 "L202" V 6550 1250 40  0000 C CNN
+F 1 "600R@100MHz" V 6700 1250 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" H 6600 1250 60  0001 C CNN
+F 3 "" H 6600 1250 60  0000 C CNN
+F 4 "=>1A" V 6750 1250 40  0000 C CNN "Current"
+F 5 "Ferrite bead, current rating 1A or higher, 600R@100MHz" V 6800 1300 40  0001 C CNN "Description"
+F 6 "0805" V 6600 1250 60  0001 C CNN "Size"
+	1    6600 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 1250 6950 1650
+Connection ~ 9450 1250
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5CBA9A90
+P 1250 1100
+AR Path="/54DA50D9/5CBA9A90" Ref="#PWR?"  Part="1" 
+AR Path="/54BE4270/5CBA9A90" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 1250 950 50  0001 C CNN
+F 1 "+3.3VA" H 1265 1273 50  0000 C CNN
+F 2 "" H 1250 1100 50  0001 C CNN
+F 3 "" H 1250 1100 50  0001 C CNN
+	1    1250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4900 4700 4900
+Wire Wire Line
+	4250 5100 4700 5100
+Wire Wire Line
+	4250 5200 4700 5200
+Wire Wire Line
+	6450 6400 7100 6400
+Text Label 7350 6150 2    60   ~ 0
+AVDD
+Wire Wire Line
+	7050 6150 7100 6150
+Wire Wire Line
+	7100 6150 7100 6400
+Connection ~ 7100 6150
+Wire Wire Line
+	7100 6150 7350 6150
+Wire Wire Line
+	4250 5850 5900 5850
+Wire Wire Line
+	5900 5850 5900 6150
+Connection ~ 5900 6150
+$Comp
+L MyKiCadLibs-Lib:CP1 C208
+U 1 1 5CD9D904
+P 4350 6350
+F 0 "C208" H 4400 6450 50  0000 L CNN
+F 1 "47u" H 4400 6250 50  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:CAP-SMD-SIZE-D" H 4350 6350 60  0001 C CNN
+F 3 "" H 4350 6350 60  0000 C CNN
+F 4 "16V" H 4405 6165 50  0000 L CNN "Voltage"
+F 5 "Case D SMD Aluminium Electrolytic" H 4350 6650 40  0001 L CNN "Type"
+F 6 "Low impedance aluminium electrolytic capacitor - Panasonic FP, FK or Similar" H 4350 6750 40  0001 L CNN "Description"
+	1    4350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C210
+U 1 1 5CDBB549
+P 4750 6350
+F 0 "C210" H 4750 6450 40  0000 L CNN
+F 1 "100n" H 4760 6265 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 4788 6200 30  0001 C CNN
+F 3 "" H 4750 6450 60  0000 C CNN
+F 4 "50V" H 4765 6195 40  0000 L CNN "Voltage"
+F 5 "X7R" H 4765 6125 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 4750 6650 40  0001 L CNN "Description"
+F 7 "10%" H 4820 5985 40  0001 C CNN "Tolerance"
+F 8 "0603" H 4760 6055 40  0000 L CNN "Size"
+	1    4750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5700 4350 5700
+Wire Wire Line
+	4750 5700 4750 6150
+Wire Wire Line
+	4350 6150 4350 5700
+Connection ~ 4350 5700
+$Comp
+L power:GNDD #PWR0206
+U 1 1 5CDE8E9E
+P 4350 6800
+F 0 "#PWR0206" H 4350 6550 60  0001 C CNN
+F 1 "GNDD" H 4350 6650 60  0000 C CNN
+F 2 "" H 4350 6800 60  0000 C CNN
+F 3 "" H 4350 6800 60  0000 C CNN
+	1    4350 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6800 4350 6700
+Connection ~ 4350 6700
+Wire Wire Line
+	4350 6700 4350 6550
+Wire Wire Line
+	4750 6700 4750 6550
+Wire Wire Line
+	4350 5700 4750 5700
+Wire Wire Line
+	4350 6700 4750 6700
+$Comp
+L MyKiCadLibs-Lib:CP1 C213
+U 1 1 5CE592A8
+P 5100 6350
+F 0 "C213" H 5150 6450 50  0000 L CNN
+F 1 "10u" H 5150 6250 50  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:CAP-SMD-SIZE-B" H 5100 6350 60  0001 C CNN
+F 3 "" H 5100 6350 60  0000 C CNN
+F 4 "16V" H 5155 6165 50  0000 L CNN "Voltage"
+F 5 "Case B SMD Aluminium Electrolytic" H 5100 6650 40  0001 L CNN "Type"
+F 6 "Low impedance aluminium electrolytic capacitor - Panasonic FP, FK or Similar" H 5100 6750 40  0001 L CNN "Description"
+	1    5100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C215
+U 1 1 5CE59475
+P 5450 6350
+F 0 "C215" H 5450 6450 40  0000 L CNN
+F 1 "100n" H 5460 6265 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 5488 6200 30  0001 C CNN
+F 3 "" H 5450 6450 60  0000 C CNN
+F 4 "50V" H 5465 6195 40  0000 L CNN "Voltage"
+F 5 "X7R" H 5465 6125 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 5450 6650 40  0001 L CNN "Description"
+F 7 "10%" H 5520 5985 40  0001 C CNN "Tolerance"
+F 8 "0603" H 5460 6055 40  0000 L CNN "Size"
+	1    5450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0207
+U 1 1 5CE594FE
+P 5100 6800
+F 0 "#PWR0207" H 5100 6550 60  0001 C CNN
+F 1 "GNDD" H 5100 6650 60  0000 C CNN
+F 2 "" H 5100 6800 60  0000 C CNN
+F 3 "" H 5100 6800 60  0000 C CNN
+	1    5100 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6800 5100 6700
+Wire Wire Line
+	5450 6550 5450 6700
+Wire Wire Line
+	5450 6700 5100 6700
+Connection ~ 5100 6700
+Wire Wire Line
+	5100 6700 5100 6550
+Wire Wire Line
+	5100 6150 5100 5550
+Wire Wire Line
+	5100 5550 4250 5550
+Wire Wire Line
+	5450 6150 5450 5550
+Wire Wire Line
+	5450 5550 5100 5550
+Connection ~ 5100 5550
+$Comp
+L MyKiCadLibs-Lib:C C217
+U 1 1 5CECC345
+P 5750 6350
+F 0 "C217" H 5750 6450 40  0000 L CNN
+F 1 "10n" H 5760 6265 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 5788 6200 30  0001 C CNN
+F 3 "" H 5750 6450 60  0000 C CNN
+F 4 "50V" H 5765 6195 40  0000 L CNN "Voltage"
+F 5 "X7R" H 5765 6125 40  0000 L CNN "Type"
+F 6 "Ceramic capacitor" H 5750 6650 40  0001 L CNN "Description"
+F 7 "10%" H 5820 5985 40  0001 C CNN "Tolerance"
+F 8 "0603" H 5760 6055 40  0000 L CNN "Size"
+	1    5750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6150 5750 5400
+Wire Wire Line
+	5750 5400 4250 5400
+$Comp
+L power:GNDD #PWR0208
+U 1 1 5CEDD34A
+P 5750 6800
+F 0 "#PWR0208" H 5750 6550 60  0001 C CNN
+F 1 "GNDD" H 5750 6650 60  0000 C CNN
+F 2 "" H 5750 6800 60  0000 C CNN
+F 3 "" H 5750 6800 60  0000 C CNN
+	1    5750 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6800 5750 6550
+$Comp
+L power:GNDD #PWR0203
+U 1 1 5CF10545
+P 2650 6650
+F 0 "#PWR0203" H 2650 6400 60  0001 C CNN
+F 1 "GNDD" H 2650 6500 60  0000 C CNN
+F 2 "" H 2650 6650 60  0000 C CNN
+F 3 "" H 2650 6650 60  0000 C CNN
+	1    2650 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6400 2650 6550
+Wire Wire Line
+	2650 6550 2750 6550
+Wire Wire Line
+	2750 6550 2750 6400
+Connection ~ 2650 6550
+Wire Wire Line
+	2650 6550 2650 6650
+Wire Wire Line
+	2750 6550 2850 6550
+Wire Wire Line
+	2850 6550 2850 6400
+Connection ~ 2750 6550
+Wire Wire Line
+	2850 6550 2950 6550
+Wire Wire Line
+	2950 6550 2950 6400
+Connection ~ 2850 6550
+Wire Wire Line
+	2950 6550 3050 6550
+Wire Wire Line
+	3050 6550 3050 6400
+Connection ~ 2950 6550
+$Comp
+L power:GNDD #PWR0204
+U 1 1 5CF64F6D
+P 3300 6650
+F 0 "#PWR0204" H 3300 6400 60  0001 C CNN
+F 1 "GNDD" H 3300 6500 60  0000 C CNN
+F 2 "" H 3300 6650 60  0000 C CNN
+F 3 "" H 3300 6650 60  0000 C CNN
+	1    3300 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6650 3300 6550
+Wire Wire Line
+	3400 6400 3400 6550
+Wire Wire Line
+	3400 6550 3300 6550
+Connection ~ 3300 6550
+Wire Wire Line
+	3300 6550 3300 6400
+Text Label 1150 6100 0    60   ~ 0
+XTALOUT
+Text Label 1150 6000 0    60   ~ 0
+XTALIN
+Wire Wire Line
+	9000 4150 8800 4150
+Wire Wire Line
+	8800 4150 8800 4800
+Connection ~ 8800 4800
+Wire Wire Line
+	8800 4800 9000 4800
+Wire Wire Line
+	1700 6000 1150 6000
+Wire Wire Line
+	1150 6100 1700 6100
+$Comp
+L MyKiCadLibs-Lib:R R201
+U 1 1 5D29947E
+P 6050 5400
+F 0 "R201" V 6000 5700 40  0000 C CNN
+F 1 "22" V 6057 5401 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" V 5980 5400 30  0001 C CNN
+F 3 "" V 5970 5400 30  0000 C CNN
+F 4 "63mW" V 6150 5400 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 6295 5400 40  0001 C CNN "Description"
+F 6 "0603" V 6225 5400 40  0001 C CNN "Size"
+F 7 "1%" V 6375 5400 40  0001 C CNN "Tolerance"
+	1    6050 5400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6300 5400 6500 5400
+Wire Wire Line
+	5800 5400 5750 5400
+Connection ~ 5750 5400
+Text Label 2550 2700 3    60   ~ 0
+AVDD
+Wire Wire Line
+	2550 2700 2550 3100
+Wire Wire Line
+	2650 3200 2650 3100
+Wire Wire Line
+	2650 3100 2550 3100
+Connection ~ 2550 3100
+Wire Wire Line
+	2550 3100 2550 3200
+Wire Wire Line
+	2750 3200 2750 3100
+Wire Wire Line
+	2750 3100 2650 3100
+Connection ~ 2650 3100
+Wire Wire Line
+	2850 3200 2850 3100
+Wire Wire Line
+	2850 3100 2750 3100
+Connection ~ 2750 3100
+Text Label 3000 2700 3    60   ~ 0
+DVDD
+Wire Wire Line
+	3000 2700 3000 3100
+Wire Wire Line
+	3100 3200 3100 3100
+Wire Wire Line
+	3100 3100 3000 3100
+Connection ~ 3000 3100
+Wire Wire Line
+	3000 3100 3000 3200
+Wire Wire Line
+	4250 5000 4700 5000
+Text HLabel 4700 3600 2    60   Input ~ 0
+ADC2RN
+Text HLabel 4700 3700 2    60   Input ~ 0
+ADC2RP
+Wire Wire Line
+	4700 3700 4250 3700
+Wire Wire Line
+	4250 3600 4700 3600
+Text HLabel 4700 3800 2    60   Input ~ 0
+ADC2LN
+Text HLabel 4700 3900 2    60   Input ~ 0
+ADC2LP
+Wire Wire Line
+	4700 3900 4250 3900
+Wire Wire Line
+	4250 3800 4700 3800
+Text HLabel 4700 4000 2    60   Input ~ 0
+ADC1RN
+Text HLabel 4700 4100 2    60   Input ~ 0
+ADC1RP
+Wire Wire Line
+	4700 4100 4250 4100
+Wire Wire Line
+	4250 4000 4700 4000
+Text HLabel 4700 4200 2    60   Input ~ 0
+ADC1LN
+Text HLabel 4700 4300 2    60   Input ~ 0
+ADC1LP
+Wire Wire Line
+	4700 4300 4250 4300
+Wire Wire Line
+	4250 4200 4700 4200
+Text HLabel 1250 3600 0    60   Output ~ 0
+DAC1LP
+Text HLabel 1250 3700 0    60   Output ~ 0
+DAC1LN
+Wire Wire Line
+	1250 3600 1700 3600
+Wire Wire Line
+	1250 3700 1700 3700
+Text HLabel 1250 3800 0    60   Output ~ 0
+DAC1RP
+Text HLabel 1250 3900 0    60   Output ~ 0
+DAC1RN
+Wire Wire Line
+	1250 3800 1700 3800
+Wire Wire Line
+	1250 3900 1700 3900
+Text HLabel 1250 4000 0    60   Output ~ 0
+DAC2LP
+Text HLabel 1250 4100 0    60   Output ~ 0
+DAC2LN
+Wire Wire Line
+	1250 4000 1700 4000
+Wire Wire Line
+	1250 4100 1700 4100
+Text HLabel 1250 4200 0    60   Output ~ 0
+DAC2RP
+Text HLabel 1250 4300 0    60   Output ~ 0
+DAC2RN
+Wire Wire Line
+	1250 4200 1700 4200
+Wire Wire Line
+	1250 4300 1700 4300
+Text HLabel 1250 4450 0    60   Output ~ 0
+DAC3LP
+Text HLabel 1250 4550 0    60   Output ~ 0
+DAC3LN
+Wire Wire Line
+	1250 4450 1700 4450
+Wire Wire Line
+	1250 4550 1700 4550
+Text HLabel 1250 4650 0    60   Output ~ 0
+DAC3RP
+Text HLabel 1250 4750 0    60   Output ~ 0
+DAC3RN
+Wire Wire Line
+	1250 4650 1700 4650
+Wire Wire Line
+	1250 4750 1700 4750
+Text HLabel 1250 4850 0    60   Output ~ 0
+DAC4LP
+Text HLabel 1250 4950 0    60   Output ~ 0
+DAC4LN
+Wire Wire Line
+	1250 4850 1700 4850
+Wire Wire Line
+	1250 4950 1700 4950
+Text HLabel 1250 5050 0    60   Output ~ 0
+DAC4RP
+Text HLabel 1250 5150 0    60   Output ~ 0
+DAC4RN
+Wire Wire Line
+	1250 5050 1700 5050
+Wire Wire Line
+	1250 5150 1700 5150
+$Comp
+L MyKiCadLibs-Lib:C C?
+U 1 1 5C8D61AB
+P 7950 1850
+AR Path="/54DA50D9/5C8D61AB" Ref="C?"  Part="1" 
+AR Path="/54BE4270/5C8D61AB" Ref="C223"  Part="1" 
+F 0 "C223" H 7950 1950 40  0000 L CNN
+F 1 "22u" H 7960 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 7988 1700 30  0001 C CNN
+F 3 "" H 7950 1950 60  0000 C CNN
+F 4 "10V" H 8015 1700 40  0000 C CNN "Voltage"
+F 5 "X5R" H 8020 1625 40  0000 C CNN "Type"
+F 6 "Ceramic capacitor" H 7950 2150 40  0001 L CNN "Description"
+F 7 "20%" H 8350 2350 40  0001 C CNN "Tolerance"
+F 8 "0603" H 7950 1850 60  0001 C CNN "Size"
+	1    7950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:C C?
+U 1 1 5C8E46C9
+P 3050 1850
+AR Path="/54DA50D9/5C8E46C9" Ref="C?"  Part="1" 
+AR Path="/54BE4270/5C8E46C9" Ref="C203"  Part="1" 
+F 0 "C203" H 3050 1950 40  0000 L CNN
+F 1 "22u" H 3060 1765 40  0000 L CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0603" H 3088 1700 30  0001 C CNN
+F 3 "" H 3050 1950 60  0000 C CNN
+F 4 "10V" H 3115 1700 40  0000 C CNN "Voltage"
+F 5 "X5R" H 3120 1625 40  0000 C CNN "Type"
+F 6 "Ceramic capacitor" H 3050 2150 40  0001 L CNN "Description"
+F 7 "20%" H 3450 2350 40  0001 C CNN "Tolerance"
+F 8 "0603" H 3050 1850 60  0001 C CNN "Size"
+	1    3050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1650 3050 1250
+Connection ~ 3050 1250
+Wire Wire Line
+	3050 1250 3300 1250
+Wire Wire Line
+	3050 2050 3050 2350
+Connection ~ 3050 2350
+Wire Wire Line
+	3050 2350 3300 2350
+Wire Wire Line
+	7950 1650 7950 1250
+Connection ~ 7950 1250
+Wire Wire Line
+	7950 1250 8250 1250
+Wire Wire Line
+	7950 2050 7950 2350
+Connection ~ 7950 2350
+Wire Wire Line
+	7950 2350 8250 2350
+NoConn ~ 3850 6400
+NoConn ~ 3750 6400
+NoConn ~ 3650 6400
+NoConn ~ 3550 6400
+Text HLabel 6500 5700 2    60   Output ~ 0
+CM
+Wire Wire Line
+	6500 5700 4750 5700
+Connection ~ 4750 5700
+Wire Wire Line
+	2000 2350 3050 2350
+Wire Wire Line
+	2000 1250 3050 1250
+Wire Wire Line
+	6950 2350 7950 2350
+Wire Wire Line
+	6950 1250 7950 1250
+Text Notes 8900 4000 0    59   ~ 0
+Clock from I2S
+Text Notes 7300 3850 0    59   ~ 0
+Three master clock options available.\n1) A standard crystal.\nFit X201, C222 and C226 (check crystal load requirements), R203 (100R)\n2) From the I2S connectors, e.g. provided by the uDSP board\nFit R204 and either R401 or R406\n3) An external source, such as a custom low jitter clock source\nFit R205 (0R or low value) and if needed R206\n
+$EndSCHEMATC
